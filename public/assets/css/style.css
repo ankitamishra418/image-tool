@@ -1,0 +1,247 @@
+/* Home Page Styles */
+.tools-home {
+    min-height: calc(100vh - 150px);
+    padding: 5rem 0;
+    background:
+        linear-gradient(135deg,
+            rgba(238, 244, 255, .94),
+            rgba(251, 247, 255, .92)),
+        url('../images/background/home-bg.png') center center / cover no-repeat;
+}
+
+.tools-kicker {
+    color: #6c4cff;
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+
+.tools-title {
+    color: #172554;
+    font-size: clamp(2.4rem, 6vw, 4.7rem);
+    font-weight: 800;
+    letter-spacing: -.06em;
+    line-height: 1.02;
+}
+
+.tools-title span {
+    color: #6c4cff;
+}
+
+.tools-copy {
+    color: #5d6681;
+    font-size: 1.08rem;
+    max-width: 39rem;
+}
+
+.tool-link {
+    border: 1px solid #e6e9f4;
+    border-radius: 1.25rem;
+    box-shadow: 0 .85rem 2.5rem rgba(51, 65, 120, .08);
+    color: inherit;
+    display: block;
+    height: 100%;
+    padding: 1.7rem;
+    text-decoration: none;
+    transition: .25s ease;
+}
+
+.tool-link:hover {
+    border-color: #bdb3ff;
+    box-shadow: 0 1.25rem 2.8rem rgba(79, 58, 201, .16);
+    color: inherit;
+    transform: translateY(-6px);
+}
+
+.tool-icon {
+    align-items: center;
+    background: #eeeaff;
+    border-radius: 1rem;
+    color: #6548eb;
+    display: inline-flex;
+    font-size: 1.4rem;
+    height: 3.4rem;
+    justify-content: center;
+    width: 3.4rem;
+}
+
+.tool-link h2 {
+    color: #1c2a52;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.tool-link p {
+    color: #68728d;
+    font-size: .93rem;
+    margin-bottom: 0;
+}
+
+.tool-arrow {
+    color: #6548eb;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+
+/* tool page styles */
+
+.image-tool-page {
+    min-height: calc(100vh - 150px);
+    padding: 4rem 0;
+    background: linear-gradient(135deg, #eef4ff, #fbf7ff);
+}
+
+.back-link {
+    color: #5b45d8;
+    font-size: .9rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    color: #3825ae;
+}
+
+.tool-panel {
+    border: 0;
+    border-radius: 1.4rem;
+    box-shadow: 0 1.5rem 4rem rgba(51, 65, 120, .14);
+    overflow: hidden;
+}
+
+.drop-zone {
+    background: #fafbff;
+    border: 2px dashed #bbc5e7;
+    border-radius: 1rem;
+    cursor: pointer;
+    min-height: 240px;
+    padding: 2rem;
+    transition: .25s ease;
+}
+
+.drop-zone:hover,
+.drop-zone.is-dragging {
+    background: #f2efff;
+    border-color: #6c4cff;
+    transform: translateY(-2px);
+}
+
+.drop-zone:focus {
+    box-shadow: 0 0 0 .25rem rgba(108, 76, 255, .18);
+    outline: 0;
+}
+
+.upload-icon {
+    align-items: center;
+    background: #ebe7ff;
+    border-radius: 50%;
+    color: #6c4cff;
+    display: inline-flex;
+    height: 4rem;
+    justify-content: center;
+    width: 4rem;
+}
+
+.file-name {
+    color: #172554;
+    font-weight: 700;
+    word-break: break-word;
+}
+
+.field-label {
+    color: #39476f;
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+.form-control,
+.form-select {
+    border-color: #dde2f0;
+    border-radius: .7rem;
+    min-height: 3rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6c4cff;
+    box-shadow: 0 0 0 .22rem rgba(108, 76, 255, .12);
+}
+
+.tool-options {
+    background: #f7f8fc;
+    border: 1px solid #e9ebf4;
+    border-radius: 1rem;
+}
+
+.tool-action {
+    background: linear-gradient(135deg, #6c4cff, #4b39d9);
+    border: 0;
+    border-radius: .75rem;
+    box-shadow: 0 .65rem 1.2rem rgba(91, 68, 229, .23);
+    font-weight: 700;
+    min-height: 3.25rem;
+}
+
+.tool-action:hover {
+    background: linear-gradient(135deg, #5c40e8, #3f2dc4);
+}
+
+.form-check-input:checked {
+    background-color: #6c4cff;
+    border-color: #6c4cff;
+}
+
+#result .result-card {
+    border: 1px solid #e7e9f2;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#result img {
+    background: #f7f8fc;
+    max-height: 360px;
+    object-fit: contain;
+    width: 100%;
+}
+
+.crop-editor {
+    background: #10172d;
+    border-radius: 1rem;
+    display: none;
+    margin-top: 1.5rem;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.crop-editor.is-ready {
+    display: block;
+}
+
+.crop-canvas {
+    cursor: crosshair;
+    display: inline-block;
+    line-height: 0;
+    max-width: 100%;
+    position: relative;
+    touch-action: none;
+}
+
+.crop-canvas img {
+    height: auto;
+    max-height: 460px;
+    max-width: 100%;
+    user-select: none;
+    width: auto;
+}
+
+.crop-selection {
+    background: rgba(108, 76, 255, .18);
+    border: 2px solid #b9adff;
+    display: none;
+    pointer-events: none;
+    position: absolute;
+}
+
+
